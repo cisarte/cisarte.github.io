@@ -52,7 +52,7 @@ main, .content, .map, .infos {
 .redes-sociais img: hover{
 	cursor: pointer;
 }
-.headerSecundario {
+.header-3 {
 	background-color: #ffffff;
 	width: 980px;
 	margin: 0 auto;
