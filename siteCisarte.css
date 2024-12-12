@@ -53,7 +53,7 @@ main, .content, .map, .infos {
 .redes-sociais img: hover{
 	cursor: pointer;
 }
-.header-3 {
+.header-3, .headerAtividades-dois {
 	background-color: #ffffff;
 	width: 980px;
 	margin: 0 auto;
@@ -61,7 +61,7 @@ main, .content, .map, .infos {
 
 
 }
-.header-2, .headerAtividades, .headerAtividades-dois, .botao {
+.header-2, .headerAtividades, .botao {
 	background-color: #ffffff;
     max-width: 100%;
     margin: 0 auto;
