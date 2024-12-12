@@ -53,11 +53,20 @@ main, .content, .map, .infos {
 .redes-sociais img: hover{
 	cursor: pointer;
 }
-
-.header-2, .headerAtividades, .headerAtividades-dois, .botao {
+.headerSecundario {
 	background-color: #ffffff;
 	width: 980px;
 	margin: 0 auto;
+	font-family: Source Sans Pro, sans-serif;
+
+
+}
+.header-2, .headerAtividades, .headerAtividades-dois, .botao {
+	background-color: #ffffff;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 
 }
 
@@ -66,50 +75,47 @@ main, .content, .map, .infos {
 	border-bottom: 3px solid #C4C4C4;
 }
 
+.menu2 {
+    display: flex;  /* Use Flexbox */
+    justify-content: space-around;  /* Distribute items evenly */
+    width: 100%;
+}
+
+.menu2 ul {
+    display: flex;  /* Make the <ul> a flex container */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
 .menu2 ul li {
-	display: inline-block;
-	color: #9C9C9C;	
-
+    margin: 0 10px;  /* Add margin between items if needed */
 }
-
-.menu2 ul li a:hover {
-	/*border-bottom: 2px solid #262626;*/
-	background-color: #E5E5E5;
-	
-}
-
-
-.menu2 ul li a:hover {
-	color: #262626;
-}
-
-
-
 
 .menu2 ul li a {
-	color: #9C9C9C;
-	text-decoration: none;
-	font-size: 20px;
-	padding: 30px 68px;
-	height: 80px;
-	width: 240px;
-	font-family: Source Sans Pro, sans-serif;
-	font-weight: bold;
-
-
+    color: #9C9C9C;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 30px;  /* Adjust padding for button appearance */
+    height: 60px;  /* Ensure all buttons have the same height */
+    width: auto;  /* Let width adjust based on content */
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;  /* Center the text */
+    transition: background-color 0.3s ease, color 0.3s ease;  /* Smooth transition for hover/focus effects */
 }
 
-.menu2 {
-	width: 100%;
-	float: left;
-}
-
-
+/* Focus effect (when the button is clicked or focused via keyboard) */
 .menu2 ul li a:focus {
-	/*border-bottom: 2px solid #262626;*/
-	background-color: #E5E5E5;
-	color: #262626;
-	
+    background-color: #E5E5E5;
+    color: #262626;
+}
+
+/* Hover effect (when the button is hovered with the mouse) */
+.menu2 ul li a:hover {
+    background-color: #E5E5E5;  /* Same as focus, or change to a different color */
+    color: #262626;  /* Change text color on hover */
 }
 
 .col-100 {
@@ -633,4 +639,5 @@ li.slick-active button {
 	width: 100%
 
 }
+
 
